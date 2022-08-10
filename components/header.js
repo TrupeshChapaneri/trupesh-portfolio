@@ -62,7 +62,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         )}
       </Popover>
       <div
-        className={`mt-7 px-10 hidden flex-row items-center justify-between sticky bg-black ${
+        className={`mt-7 container mx-auto hidden flex-row items-center justify-between sticky bg-black ${
           scrolled && "shadow-[-5px_16px_12px_-16px_rgba(0,0,0,0.1)]"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
