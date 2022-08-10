@@ -75,6 +75,7 @@ body {
 .g-text {
   background-image: -webkit-linear-gradient(92deg, #f356269c, #feab3a);
   background-clip: text;
+  font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: hue 7s infinite linear;
