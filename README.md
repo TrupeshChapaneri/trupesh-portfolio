@@ -1,1 +1,1 @@
-## hey
+## Hello, Hi and Namste 🙏 I'm Trupesh Chapaneri and this is my portfolio website.

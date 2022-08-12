@@ -75,34 +75,34 @@ export default function Home() {
           handleServiceScroll,
         }}
       />
-      <div className="container mx-auto px-7 mb-8">
+      <div className="container mx-auto px-8 mb-8">
         <div className="laptop:mt-20 mt-8">
           <h1
             ref={textOne}
-            className="text-3xl tablet:text-6xl laptop:text-7xl p-1 tablet:py-3 text-bold w-4/5 mob:w-full laptop:w-4/5"
+            className="text-2xl tablet:text-5xl laptop:text-6xl tablet:py-2 text-bold w-5/5 mob:w-full laptop:w-5/5"
           >
-            Hello 👋
+            Hello, Hi and Namste 🙏
           </h1>
           <h1
             ref={textTwo}
-            className="text-3xl tablet:text-6xl laptop:text-7xl p-1 tablet:py-3 text-bold w-full laptop:w-4/5"
+            className="text-2xl tablet:text-5xl laptop:text-6xl tablet:py-2 text-bold w-full laptop:w-4/5"
           >
             I&apos;m Trupesh Chapaneri
           </h1>
           <h1
             ref={textThree}
-            className="text-3xl tablet:text-6xl laptop:text-7xl p-1 tablet:py-3 text-bold w-full laptop:w-4/5"
+            className="text-2xl tablet:text-5xl laptop:text-6xl tablet:py-2 text-bold w-full laptop:w-4/5"
           >
             specializing in building
           </h1>
           <h1
             ref={textFour}
-            className="text-3xl tablet:text-6xl laptop:text-7xl  tablet:py-3 text-bold w-full laptop:w-5/5"
+            className="text-2xl tablet:text-5xl laptop:text-6xl tablet:py-2 text-bold w-full laptop:w-5/5"
           >
             exceptional <span className="g-text">digital experiences.</span>
           </h1>
 
-          <Socials className="mt-2 laptop:mt-8" />
+          <Socials className="mt-4 laptop:mt-10" />
         </div>
 
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
