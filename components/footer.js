@@ -2,10 +2,10 @@ import React from "react";
 import { Socials } from "./socials";
 import Link from "next/link";
 
-const Footer = () => {
+const Footer = ({ connectRef }) => {
   return (
     <>
-      <div className="laptop:p-0">
+      <div className="laptop:p-0" ref={connectRef}>
         <h1 className="text-2xl text-bold">
           Let&apos;s talk about your project.
         </h1>
@@ -17,10 +17,7 @@ const Footer = () => {
         </div>
       </div>
       <h1 className="text-sm text-bold mt-2 laptop:mt-20">
-        Made With ❤ by{" "}
-        <Link href="http://www.King.com">
-          <a className="underline underline-offset-1">King</a>
-        </Link>
+        Made with Next.js • Hosted on Netlify
       </h1>
     </>
   );

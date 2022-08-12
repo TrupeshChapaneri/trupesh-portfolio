@@ -19,18 +19,24 @@ export const socialMedia = [
 export const projects = [
   {
     id: "1",
-    title: "Project One Test",
-    description: "Web Design",
-    imageSrc:
-      "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
-    url: "asdasd/",
+    title: "Search Engine Results Page (SERP)",
+    description: [
+      "React.js",
+      "React Query",
+      "Material UI",
+      "Node.js",
+      "MongoDB",
+    ],
+    url: "https://rankingsonly.com/",
   },
   {
     id: "2",
-    title: "Project Two",
-    description: "Web Development",
-    imageSrc:
-      "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
+    title: "Trupesh's Portfolio",
+    description: [
+      "React.js",
+      "Tailwind CSS",
+      "GSAP"
+    ],
     url: "asdasd/",
   },
 ];

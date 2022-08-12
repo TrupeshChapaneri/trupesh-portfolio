@@ -4,7 +4,12 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { Button } from "./button";
 
-const Header = ({ handleWorkScroll, handleAboutScroll }) => {
+const Header = ({
+  handleWorkScroll,
+  handleAboutScroll,
+  handleConnectScroll,
+  handleServiceScroll,
+}) => {
   const router = useRouter();
 
   const [scrolled, setScrolled] = useState(false);
@@ -50,11 +55,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
               <div className="grid grid-cols-1">
                 <Button onClick={handleWorkScroll}>Work</Button>
                 <Button onClick={handleAboutScroll}>About</Button>
-
-                <Button
-                  onClick={() => window.open("mailto:trupesh789@gmail.com")}
-                >
-                  Contact
+                <Button onClick={handleServiceScroll}>Services</Button>
+                <Button classes="g-text" onClick={handleConnectScroll}>
+                  Let&apos;s connect
                 </Button>
               </div>
             </Popover.Panel>
@@ -76,8 +79,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll }) => {
         <div className="flex">
           <Button onClick={handleWorkScroll}>Work</Button>
           <Button onClick={handleAboutScroll}>About</Button>
-          <Button onClick={() => window.open("mailto:trupesh789@gmail.com")}>
-            Contact
+          <Button onClick={handleServiceScroll}>Services</Button>
+          <Button classes="g-text" onClick={handleConnectScroll}>
+            Let&apos;s connect
           </Button>
         </div>
       </div>

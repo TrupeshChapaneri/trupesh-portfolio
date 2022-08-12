@@ -13,6 +13,9 @@ import { Experience } from "../components/experience";
 export default function Home() {
   const workRef = useRef();
   const aboutRef = useRef();
+  const connectRef = useRef();
+  const serviceRef = useRef();
+
   const textOne = useRef();
   const textTwo = useRef();
   const textThree = useRef();
@@ -34,6 +37,22 @@ export default function Home() {
     });
   };
 
+  const handleConnectScroll = () => {
+    window.scrollTo({
+      top: connectRef.current.offsetTop - 80,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleServiceScroll = () => {
+    window.scrollTo({
+      top: serviceRef.current.offsetTop - 80,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   useIsomorphicLayoutEffect(() => {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
@@ -49,8 +68,12 @@ export default function Home() {
         <title>Trupesh.</title>
       </Head>
       <Header
-        handleWorkScroll={handleWorkScroll}
-        handleAboutScroll={handleAboutScroll}
+        {...{
+          handleWorkScroll,
+          handleAboutScroll,
+          handleConnectScroll,
+          handleServiceScroll,
+        }}
       />
       <div className="container mx-auto px-7 mb-8">
         <div className="laptop:mt-20 mt-8">
@@ -82,6 +105,25 @@ export default function Home() {
           <Socials className="mt-2 laptop:mt-8" />
         </div>
 
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+          <h1 className="text-2xl text-bold">About.</h1>
+          <p className="mt-10 leading-10 text-xl laptop:text-3xl w-full laptop:w-3/5">
+            Hey, I&apos;m Trupesh Chapaneri, a software engineer with 2+ years
+            of professional experience working remotely around the{" "}
+            <span className="g-text">world.</span> I create websites, brand
+            identities, packaging, and everything in-between. I&apos;m
+            passionate about building & designing delightful experiences with
+            the combination of business, marketing and UI/UX design to make
+            customers and users satisfied when they are using products and
+            services online.
+          </p>
+        </div>
+
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0">
+          <h1 className="text-2xl text-bold">Experience.</h1>
+          <Experience />
+        </div>
+
         <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
@@ -97,7 +139,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0">
+        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={serviceRef}>
           <h1 className="text-2xl text-bold">Services.</h1>
           <div className="mt-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {services.map((service, index) => (
@@ -110,26 +152,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0">
-          <h1 className="text-2xl text-bold">Experience.</h1>
-          <Experience />
-        </div>
-
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="text-2xl text-bold">About.</h1>
-          <p className="mt-10 leading-10 text-xl laptop:text-3xl w-full laptop:w-3/5">
-            Hey, I&apos;m Trupesh Chapaneri, a software engineer with 2+ years
-            of professional experience working remotely around the{" "}
-            <span className="g-text">world.</span> I create websites, brand
-            identities, packaging, and everything in-between. I&apos;m
-            passionate about building & designing delightful experiences with
-            the combination of business, marketing and UI/UX design to make
-            customers and users satisfied when they are using products and
-            services online.
-          </p>
-        </div>
         <div className="border-t-4 laptop:my-40 border-gray-50" />
-        <Footer />
+        <Footer {...{ connectRef }} />
       </div>
     </>
   );

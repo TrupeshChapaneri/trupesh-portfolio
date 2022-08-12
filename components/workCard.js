@@ -1,23 +1,22 @@
 import React from "react";
 
-const WorkCard = ({ img, name, description, onClick }) => {
+const WorkCard = ({ name, description, onClick }) => {
   return (
-    <div
-      className="overflow-hidden cursor-pointer rounded-lg p-2 laptop:py-4 first:ml-0"
-      onClick={onClick}
-    >
-      <div
-        className="overflow-hidden rounded-lg transition-all ease-out duration-300 hover:scale-95 h-48 mob:h-auto"
-        style={{ height: "600px" }}
+    <div className="py-2 laptop:py-2 first:ml-0">
+      <h1
+        onClick={onClick}
+        className="mb-4 cursor-pointer text-3xl font-medium transition-all ease-out duration-300 hover:scale-105"
       >
-        <img alt={name} className="h-full w-full object-cover" src={img}></img>
-      </div>
-      <h1 className="mt-5 text-3xl font-medium">
-        {name ? name : "Project Name"}
+        {name}
       </h1>
-      <h2 className="text-xl opacity-50">
-        {description ? description : "Description"}
-      </h2>
+      {description.map((tech, i) => (
+        <span
+          key={i}
+          className="opacity-70 text-sm font-medium mr-2 px-2 py-0.5 rounded bg-blue-200 text-blue-800"
+        >
+          {tech}
+        </span>
+      ))}
     </div>
   );
 };
