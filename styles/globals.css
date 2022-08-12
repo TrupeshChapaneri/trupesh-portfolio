@@ -28,7 +28,7 @@ body {
   mix-blend-mode: difference;
   pointer-events: none !important;
   z-index: 9999;
-  transition: 0.15s linear;
+  transition: 0.1s linear;
   animation: cursorAnim 5s ease infinite, blobBackground 15s ease infinite;
 }
 @keyframes cursorAnim {

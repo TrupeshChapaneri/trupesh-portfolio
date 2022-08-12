@@ -12,7 +12,7 @@ const WorkCard = ({ name, description, onClick }) => {
       {description.map((tech, i) => (
         <span
           key={i}
-          className="opacity-70 text-sm font-medium mr-2 px-2 py-0.5 rounded bg-blue-200 text-blue-800"
+          className="opacity-80 text-sm font-medium mr-2 px-2 py-0.5 rounded bg-blue-200 text-blue-800"
         >
           {tech}
         </span>

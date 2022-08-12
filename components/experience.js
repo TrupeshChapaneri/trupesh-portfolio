@@ -77,7 +77,7 @@ const Experience = () => {
         </span>
         <h3 className="flex items-center mb-1 text-lg font-semibold text-white">
           Full Time Freelance Software Developer
-          <span className="text-sm font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 ml-3">
+          <span className="opacity-80 text-sm font-medium mr-2 px-2.5 py-0.5 rounded bg-blue-200 text-blue-800 ml-3">
             Latest
           </span>
         </h3>
