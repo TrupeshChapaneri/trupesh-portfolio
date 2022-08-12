@@ -32,44 +32,23 @@ export const projects = [
   {
     id: "2",
     title: "Trupesh's Portfolio",
-    description: [
-      "React.js",
-      "Tailwind CSS",
-      "GSAP"
-    ],
+    description: ["React.js", "Tailwind CSS", "GSAP"],
     url: "asdasd/",
   },
 ];
 
 export const services = [
   {
-    id: "1",
-    title: "Art Direction",
+    id: 1,
+    title: "Web Development",
     description:
-      "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance.",
+      "We build and optimize your online presence with modern frameworks to enable faster development of elements, powerful features, responsive websites, mobility, and layout.",
   },
+
   {
-    id: "2",
+    id: 2,
     title: "Branding",
     description:
-      "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors.",
-  },
-  {
-    id: "3",
-    title: "Web Design",
-    description:
-      "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel.",
-  },
-  {
-    id: "4",
-    title: "3D Design",
-    description:
-      "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life.",
-  },
-  {
-    id: "05f6299a-ebed-4bc2-b5ab-584ebd8787cc",
-    title: "New Service",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+      "We design key brand elements such as the logo, color scheme, typography, UI/UX and other design components that makes your brand stand out from competitors.",
   },
 ];

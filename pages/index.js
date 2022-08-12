@@ -152,7 +152,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="border-t-4 laptop:my-40 border-gray-50" />
+        <div className="border-t-4 my-10 laptop:my-40 border-gray-50" />
         <Footer {...{ connectRef }} />
       </div>
     </>
