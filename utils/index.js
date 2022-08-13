@@ -16,6 +16,7 @@ export const socialMedia = [
   },
   { id: "3", title: "Email", link: "mailto:trupesh789@gmail.com" },
 ];
+
 export const projects = [
   {
     id: "1",
@@ -27,13 +28,13 @@ export const projects = [
       "Node.js",
       "MongoDB",
     ],
-    url: "https://rankingsonly.com/",
+    url: "https://rankingsonly.com",
   },
   {
     id: "2",
     title: "Trupesh's Portfolio",
     description: ["React.js", "Tailwind CSS", "GSAP"],
-    url: "asdasd/",
+    url: "https://trupesh.netlify.app",
   },
 ];
 
